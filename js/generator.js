@@ -8,7 +8,7 @@ const urlParams = new URLSearchParams(queryString);
 
 const blinksterID = urlParams.get('blinksterID')
 
-console.log(blinksterID);
+//console.log(blinksterID);
 
 /*
 Generate a QR Code with the following Style
@@ -21,25 +21,35 @@ Square edges
 // https://github.com/kozakdenys/qr-code-styling
 
 var qrCodeURL = "www.move38.com/?ref=" + blinksterID;
+var qrSize = window.innerWidth * 0.6 - 20;
 
 const qrCode = new QRCodeStyling({
-	width: 300,
-	height: 300,
+	width: qrSize,
+	height: qrSize,
 	type: "svg",
 	data: qrCodeURL,
-	image: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+	image: "../img/blinks-logow.png",
 	dotsOptions: {
-		color: "#4267b2",
-		type: "rounded"
+		color: "#ff5b13",
+		type: "square"
 	},
 	backgroundOptions: {
-		color: "#e9ebee",
+		color: "#fff",
 	},
 	imageOptions: {
 		crossOrigin: "anonymous",
-		margin: 20
+		margin: 3
 	}
 });
 
 qrCode.append(document.getElementById("canvas"));
-qrCode.download({ name: "qr", extension: "svg" });
+
+// update the padding after
+document.getElementById("canvas").style.padding = "10px";
+document.getElementById("canvas").style.width = qrSize;
+
+// update the secret link at the bottom
+document.getElementById("secretLink").innerHTML = "www.move38.com/VIP-8675309?ref="+blinksterID;
+
+// if we want to allow the download of the QR code
+//qrCode.download({ name: "qr", extension: "svg" });

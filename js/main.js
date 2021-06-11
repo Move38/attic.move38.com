@@ -3,6 +3,17 @@ if (screen.width >= 500) {
    /* CHANGE THIS TO THE LOCATION FOR DESKTOP ... */
 }
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const blinksterID = urlParams.get('ref');
+
+document.get
+
+function buyBlinksAction() {
+  var discountCode = "VIP-8675309";
+  window.location.href='https://move38.com/discount/' + discountCode + '?redirect=/cart/37584214130865:1&ref='+blinksterID;
+};
+
 window.onscroll = function() {scrollRotate()};
 
 function scrollRotate() {

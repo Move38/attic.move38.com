@@ -5,8 +5,6 @@
 		<title>Blinks - Friends & Family</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style/generator.css"/>
-		<script type="text/javascript" src="js/generator.js"></script>
-		<script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
 	</head>
 	<body>
 <div id="poster">
@@ -20,19 +18,21 @@
 			<h1 id="line-3" class="hongkong">GET IN THE GAME!</h1>
 			
 			<!-- INSERT GENERATED QR CODE HERE -->
-			<div id="canvas"></div>
+			<div class="qrcode" id="canvas"></div>
 	
 			<!-- TODO: Remove image of static QR Code -->
-			<img id="qrcode" src="img/qr-code-styling.png"/>
+			<!-- <img class="qrcode" src="img/qr-code-styling.png"/> -->
 			
 			<h1 id="line-4" class="hongkong">SCAN THIS CODE</h1>
 
 			<p id="line-5">SAVE BIG on Blinks with this exclusive deal!</p>			
 
-			<button class="secret-link" onclick="">CAN'T SCAN QR CODES? USE THE SECRET LINK!<br>www.move38.com/VIP-8675309</button>
+			<button class="secret-link" onclick="">CAN'T SCAN QR CODES? USE THE SECRET LINK!<br><span id="secretLink">www.move38.com/VIP-8675309</span></button>
 
 			<p id="terms">Only applicable on 1st Time Blinks Purchases<br>
 				Offer valid thru August 31, 2021</p>
 	</div>
+	<script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+	<script type="text/javascript" src="js/generator.js"></script>
 	</body>
 </html>

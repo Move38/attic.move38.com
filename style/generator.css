@@ -110,11 +110,12 @@ a:active {
 	text-align: left;
 }
 
-#qrcode
+.qrcode
 {
 	background: white;
-	width: 65%;
-	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
 	border-radius: 20px;
 }
 
