@@ -1,5 +1,5 @@
 if (screen.width >= 500) {
-   // document.location = "https://move38.com";
+   document.location = "../desktop.html";
    /* CHANGE THIS TO THE LOCATION FOR DESKTOP ... */
 }
 
