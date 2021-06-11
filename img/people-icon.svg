@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-people-icon">
+      <rect width="40" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="people-icon" clip-path="url(#clip-people-icon)">
+    <rect width="40" height="40" fill="#fff"/>
+    <g id="ppl" transform="translate(6.5 8.5)">
+      <g id="ic_people_24px" transform="translate(0.095 10.618)">
+        <path id="Path_127" data-name="Path 127" d="M9.33,15.783C6.507,15.783.7,17.662.7,21.4c0,0-.126,5.029,1.085,6.045s14.485.89,15.464,0,.9-6.045.9-6.045C18.144,17.662,12.153,15.783,9.33,15.783Zm10.345.912c-.351,0-1.44-.048-1.864,0,1.405,1.349,2.576,2.42,2.484,4.709l-.62,6.045s4.56.857,6.252-.233S27.5,21.4,27.5,21.4C27.5,17.662,22.5,16.7,19.675,16.7Z" transform="translate(-0.697 -15.783)" fill="#ff5b13"/>
+      </g>
+      <circle id="Ellipse_44" data-name="Ellipse 44" cx="4.48" cy="4.48" r="4.48" transform="translate(4.409)" fill="#ff5b13"/>
+      <ellipse id="Ellipse_45" data-name="Ellipse 45" cx="3.883" cy="4.182" rx="3.883" ry="4.182" transform="translate(15.87 0.602)" fill="#ff5b13"/>
+    </g>
+  </g>
+</svg>
