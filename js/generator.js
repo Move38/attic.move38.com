@@ -6,8 +6,9 @@ const queryString = window.location.search;
 
 const urlParams = new URLSearchParams(queryString);
 
-const blinksterID = urlParams.get('blinksterID')
+var blinksterID = urlParams.get('blinksterID');
 
+var discount = urlParams.get('discount');
 //console.log(blinksterID);
 
 /*
@@ -19,8 +20,11 @@ Square edges
 */
 
 // https://github.com/kozakdenys/qr-code-styling
+if(discount === null) {
+	discount = "VIP-8675309";
+}
 
-var qrCodeURL = "www.move38.com/?ref=" + blinksterID;
+var qrCodeURL = "www.jonathanbobrow.com/move38/FFDeal?discount=" + discount + "&ref=" + blinksterID;
 var qrSize = window.innerWidth * 0.6 - 20;
 
 const qrCode = new QRCodeStyling({
@@ -28,7 +32,7 @@ const qrCode = new QRCodeStyling({
 	height: qrSize,
 	type: "svg",
 	data: qrCodeURL,
-	image: "../img/blinks-logow.png",
+	image: "./img/blinks-logow.png",
 	dotsOptions: {
 		color: "#ff5b13",
 		type: "square"
@@ -49,7 +53,12 @@ document.getElementById("canvas").style.padding = "10px";
 document.getElementById("canvas").style.width = qrSize;
 
 // update the secret link at the bottom
-document.getElementById("secretLink").innerHTML = "www.move38.com/VIP-8675309?ref="+blinksterID;
+if(blinksterID === null) {
+	document.getElementById("secretLink").innerHTML = "www.move38.com/" + discount;
+}
+else {
+	document.getElementById("secretLink").innerHTML = "www.move38.com/" + discount + "?ref=" + blinksterID;
+}
 
 // if we want to allow the download of the QR code
 //qrCode.download({ name: "qr", extension: "svg" });
