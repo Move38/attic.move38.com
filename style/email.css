@@ -1,0 +1,74 @@
+*{ font-family: sans-serif; }
+
+.purple { color: #9400FF;}
+.blue {color: #1886FF;}
+
+/* Client-specific Styles */
+#outlook a {
+	padding: 0;
+} /* Force Outlook to provide a "view in browser" menu link. */
+body {
+	width: 100% !important;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	margin: 0;
+	padding: 0;
+}
+/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+.ExternalClass {
+	width: 100%;
+} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+	line-height: 100%;
+} /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+#backgroundTable {
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+	line-height: 100% !important;
+}
+img {
+	outline: none;
+	text-decoration: none;
+	border: none;
+	-ms-interpolation-mode: bicubic;
+}
+a img {
+	border: none;
+}
+.image_fix {
+	display: block;
+}
+p {
+	margin: 0px 0px !important;
+	padding: 5px 5px;
+	font-size: .75em;
+	font-weight: bold;
+}
+table td {
+	border-collapse: collapse;
+}
+table {
+	border-collapse: collapse;
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+}
+
+/*##############################################*/
+ /*IPHONE STYLES*/
+ /*##############################################*/
+@media only screen and (max-width: 480px) {
+table {
+	position: relative;
+}
+
+table[class="fluid-table"], td[class="fluid-cell"]{
+	width: 100% !important;
+	padding: 20px 0px 20px 0px!important;
+}
+
+img[class="fluid-image"] {
+	width: 100% !important;
+	height: auto !important;
+}
+}
