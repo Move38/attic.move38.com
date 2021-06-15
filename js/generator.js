@@ -6,7 +6,7 @@ const queryString = window.location.search;
 
 const urlParams = new URLSearchParams(queryString);
 
-var blinksterID = urlParams.get('blinksterID');
+var blinksterID = urlParams.get('ref');
 
 var discount = urlParams.get('discount');
 //console.log(blinksterID);
