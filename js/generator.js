@@ -24,7 +24,7 @@ if(discount === null) {
 	discount = "VIP-8675309";
 }
 
-var qrCodeURL = "www.jonathanbobrow.com/move38/FFDeal?discount=" + discount + "&ref=" + blinksterID;
+var qrCodeURL = "https://www.vip.move38.com/?discount=" + discount + "&ref=" + blinksterID;
 var qrSize = window.innerWidth * 0.6 - 20;
 
 const qrCode = new QRCodeStyling({
@@ -54,11 +54,17 @@ document.getElementById("canvas").style.width = qrSize;
 
 // update the secret link at the bottom
 if(blinksterID === null) {
-	document.getElementById("secretLink").innerHTML = "www.move38.com/" + discount;
+	document.getElementById("secretLink").innerHTML = "www.vip.move38.com/?discount=" + discount;
 }
 else {
-	document.getElementById("secretLink").innerHTML = "www.move38.com/" + discount + "?ref=" + blinksterID;
+	document.getElementById("secretLink").innerHTML = "www.vip.move38.com/?discount=" + discount;
 }
+
+function secretLinkAction() {
+	  var discountCode = "VIP-8675309";
+	  window.location.href= "https://www.vip.move38.com/?discount=" + discount + "&ref=" + blinksterID
+	};
+	
 
 // if we want to allow the download of the QR code
 //qrCode.download({ name: "qr", extension: "svg" });
