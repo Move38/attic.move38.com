@@ -24,7 +24,7 @@ if(discount === null) {
 	discount = "VIP-8675309";
 }
 
-var qrCodeURL = "https://www.vip.move38.com/?discount=" + discount + "&ref=" + blinksterID;
+var qrCodeURL = "https://vip.move38.com/?discount=" + discount + "&ref=" + blinksterID;
 var qrSize = window.innerWidth * 0.6 - 20;
 
 const qrCode = new QRCodeStyling({
@@ -54,15 +54,15 @@ document.getElementById("canvas").style.width = qrSize;
 
 // update the secret link at the bottom
 if(blinksterID === null) {
-	document.getElementById("secretLink").innerHTML = "www.vip.move38.com/?discount=" + discount;
+	document.getElementById("secretLink").innerHTML = "https://vip.move38.com/?discount=" + discount;
 }
 else {
-	document.getElementById("secretLink").innerHTML = "www.vip.move38.com/?discount=" + discount;
+	document.getElementById("secretLink").innerHTML = "https://vip.move38.com/?discount=" + discount;
 }
 
 function secretLinkAction() {
 	  var discountCode = "VIP-8675309";
-	  window.location.href= "https://www.vip.move38.com/?discount=" + discount + "&ref=" + blinksterID
+	  window.location.href= "https://vip.move38.com/?discount=" + discount + "&ref=" + blinksterID
 	};
 	
 
