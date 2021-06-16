@@ -14,6 +14,9 @@ var blinksterID = urlParams.get('ref');
 var discount = urlParams.get('discount');
 //console.log(blinksterID);
 
+var _statcounter = _statcounter || []; 
+_statcounter.push({"tags": {"blinksterID": blinksterID, "discount": discount, "page": "generator"}}); 
+
 /*
 Generate a QR Code with the following Style
 Blinks Orange -> #FB4616

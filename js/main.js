@@ -6,11 +6,18 @@ if (screen.width >= 500) {
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const blinksterID = urlParams.get('ref');
+var discount = urlParams.get('discount');
+
+if(discount === null) {
+  discount = "VIP-8675309";
+}
 
 function buyBlinksAction() {
-  var discountCode = "VIP-8675309";
-  window.location.href='https://move38.com/discount/' + discountCode + '?redirect=/cart/37584214130865:1&ref='+blinksterID;
+  window.location.href='https://move38.com/discount/' + discount + '?redirect=/cart/37584214130865:1&ref='+blinksterID;
 };
+
+var _statcounter = _statcounter || []; 
+_statcounter.push({"tags": {"blinksterID": blinksterID, "discount": discount, "page": "generator"}}); 
 
 window.onscroll = function() {scrollRotate()};
 
