@@ -17,7 +17,7 @@ function buyBlinksAction() {
 };
 
 var _statcounter = _statcounter || []; 
-_statcounter.push({"tags": {"blinksterID": blinksterID, "discount": discount, "page": "generator"}}); 
+_statcounter.push({"tags": {"blinksterID": blinksterID, "discount": discount, "page": "FnF Deal"}}); 
 
 window.onscroll = function() {scrollRotate()};
 
