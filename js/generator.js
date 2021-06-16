@@ -1,13 +1,16 @@
+// Load a desktop version if visited not on a mobile device
+if (screen.width >= 500) {
+	   document.location = "../desktop.html";
+	   /* Sends the user to a desktop formatted site ... */
+	}
+	
 /*
 Create a QR Code based on the URL being passed to the website
 */
 
 const queryString = window.location.search;
-
 const urlParams = new URLSearchParams(queryString);
-
 var blinksterID = urlParams.get('ref');
-
 var discount = urlParams.get('discount');
 //console.log(blinksterID);
 
