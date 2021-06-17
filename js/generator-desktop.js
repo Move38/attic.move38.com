@@ -62,7 +62,6 @@ else {
 }
 
 function secretLinkAction() {
-	  var discountCode = "VIP-8675309";
 	  window.location.href= "https://vip.move38.com/?discount=" + discount + "&ref=" + blinksterID
 	};
 	
