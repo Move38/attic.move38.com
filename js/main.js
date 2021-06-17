@@ -13,7 +13,7 @@ if(discount === null) {
 }
 
 function buyBlinksAction() {
-  window.location.href='https://move38.com/discount/' + discount + '?redirect=/cart/37584214130865:1&ref='+blinksterID;
+  window.location.href='https://move38.com/21278629/checkouts/015e90af8c5d63718c6bcd6bf984fc6c?discount=' + discount + '&ref=' + blinksterID;
 };
 
 var _statcounter = _statcounter || []; 
