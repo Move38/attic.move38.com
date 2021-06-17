@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;	
+}
+
+@font-face {
+  font-family: 'hongkong-medium';
+  src: url(../fonts/Indian-Type-Foundry-HongKong-Medium.woff2);
+}
+
+@font-face {
+  font-family: 'hongkong-italic';
+  src: url(../fonts/Indian-Type-Foundry-HongKong-Medium-Italic.woff);
+}
+
+
+@media only screen and (max-width: 500px){
+	.mobilevisible{
+		  display = visible;
+	}
+}
+
+h1 { font-weight: 100}
+h2 { font-weight: 100}
+h3 { font-weight: 100}
+h4 { font-weight: 100}
+h5 { font-weight: 100}
+
+.hongkong {
+	font-family: 'hongkong-medium', sans-serif;	
+}
+
+.hongkong-italic {
+	font-family: 'hongkong-italic', sans-serif;	
+}
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	color: gray;
+}
+
+a:hover {
+	color: #009eff;	
+}
+
+a:active {
+	color: #ff6300;	
+}
+
+
+#poster {
+	max-width: 100%;
+	height: 100%;
+	background: linear-gradient(#F84519, #B22BDB);
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#poster-content {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#line-1 {
+	margin-top: 20px;
+	font-size: 1.4rem;		
+}
+
+#line-2 {
+	margin-top: 10px;	
+	font-size: 1.4rem;		
+}
+
+#line-3 {
+	margin-top: 6px;
+	margin-bottom: 10px;
+	font-size: 2.8rem;		
+}
+
+#line-4 {
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+button {
+	color: white;
+	font-size: .8em;
+	font-weight: 600;
+	margin: 16px 0;
+	padding: 20px 30px;
+	background: rgba(60,10,0,0.2);
+	border-radius: 10px;
+	border: none;
+}
+}
+
+/*
+--- HEXAGONS ---
+*/
+
+#hex-small {
+	position: absolute;
+	right: 0px;
+	top: 480px;
+	width: 100px;	
+}
+
+#hex-medium {
+	position: absolute;
+	left: -15px;
+	top: 500px;
+	width: 100px;		
+}
+
+#hex-large {
+	position: absolute;
+	right: -30px;
+	top: 540px;
+	width: 100px;		
+}
+
+
+.big-save {
+	font-size: 1.5em;
+}
+
+.big {
+	font-size: 2em;
+}
+
+.poster-copy {
+	font-size: .65em;
+}
+
+
+.grey {
+	color: #808080;
+}
