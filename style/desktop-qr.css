@@ -91,6 +91,15 @@ a:active {
 	margin-bottom:10px;
 }
 
+#line-5 {
+	font-size:1.4rem;
+}
+
+.qrcode {
+	border-radius: 10px;
+	background: white;
+}
+
 button {
 	color: white;
 	font-size: .8em;

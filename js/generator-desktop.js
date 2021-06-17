@@ -25,7 +25,7 @@ if(discount === null) {
 }
 
 var qrCodeURL = "https://vip.move38.com/?discount=" + discount + "&ref=" + blinksterID;
-var qrSize = 400;
+var qrSize = 300;
 
 const qrCode = new QRCodeStyling({
 	width: qrSize,
