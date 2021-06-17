@@ -170,12 +170,20 @@ a:active {
 	border: none;
 }
 
+button {
+	display: inline-block;
+}
+
 button:active {
-	background: #e8e8e8;
+	background: #dadada;
+}
+
+button:visited {
+	background: #0086ba;
 }
 
 button:focus {
-	background: #e8e8e8;
+	background: #dadada;
 }
 
 .shadow {
