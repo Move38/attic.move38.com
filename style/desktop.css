@@ -55,7 +55,7 @@ a:active {
 
 #poster {
 	width: 100%;
-	height: 100%;
+	min-height: 600px;
 	background: linear-gradient(#F84519, #B22BDB);
 	color: white;
 	font-size: 1.5em;
@@ -63,10 +63,27 @@ a:active {
 }
 
 #poster-content {
-	width: 90%;
+	width: 95%;
+	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 30px;
+}
+
+#poster-left {
+	display: inline-block;
+	width: 65%;
+	float: left;	
+}
+
+#poster-right {
+	display: inline-block;
+	width: 35%;
+	float: left;	
+}
+
+#blinks {
+	width: 80%;
 }
 
 #line-1 {
@@ -86,6 +103,14 @@ a:active {
 #line-4 {
 	margin-top: 10px;
 	margin-bottom:10px;
+}
+
+#line-5 {
+	font-size: 2rem;
+}
+
+#line-6 {
+	font-size: 3rem;
 }
 
 /*
@@ -130,46 +155,42 @@ a:active {
 	padding: 0 5%;
 }
 
-.game-left img {
-	margin-left: -15%;
-}
-.game-right img {
-	margin-right: -15%;
-}
-
 #gameplay-gif {
-	width: 100vw;
 	position: relative;
-	left: calc(-50vw + 50%);
-	height: 300px;
-	max-width: 480px;
+	min-height: 300px;
+	max-width: 660px;
 	margin-left: auto;
 	margin-right: auto;
 	background-image: url("../img/IndieCadeEast_2018_Game_Jam_FAMILY_sm.gif");
-	background-size: auto 300px;
+	background-size: auto;
 	/* background:#FF5B13; */
 	clear: both;
 }
 
 #sushi-gif {
-	width: 100vw;
 	position: relative;
-	left: calc(-50vw + 50%);
-	height: 300px;
-	max-width: 480px;
+	min-height: 400px;
+	max-width: 660px;
 	margin-left: auto;
 	margin-right: auto;
 	background-image: url("../img/SushiGif-palindrome_ColorCorrected2021.gif");
-	background-size: auto 300px;
+	background-size: auto;
 	/* background:#FF5B13; */
 	clear: both;
+}
+
+#buy {
+	float: left;
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .buy_button {
 	color: white;
 	font-size: .8em;
 	font-weight: 600;
-	margin: 16px 0;
+	margin-top: 20px;
 	padding: 20px 30px;
 	background: #00a8e8;
 	border-radius: 10px;
@@ -202,47 +223,32 @@ a:active {
 	font-size: .65em;
 }
 
-.game-right{
+.game-row {
 	clear: both;
-	padding: 20px 0px;
-	text-align: right; 
+	max-width: 660px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.game-left{
-	clear: both;
-	padding: 20px 0px;
-	text-align: left; 
-}
-
-.game-left img {
+.game {
+	display: inline-block;
 	float: left;
-}
-
-.game-right img {
-	float: right;
+	width: 200px;
+	text-align: center;
+	padding: 10 10;
 }
 
 .game-art {
-	width: 50%;
+	width: 90%;
 }
 
 .game-info {
-	float: left;
-	width: 55%;
-	margin-top: 2.5em;
+	padding: 20px 0;
 	line-height: 1.4em;
 }
 
 .grey {
 	color: #808080;
-}
-
-.game-right .game-info{
-	margin-right: 20px;
-}
-
-.game-left .game-info{
-	margin-left: 20px;
 }
 
 .game-specs {
