@@ -170,6 +170,10 @@ a:active {
 	border: none;
 }
 
+.buy_button:active {
+	background: #40caff;
+}
+
 .shadow {
 	text-shadow: 2px 10px 20px rgba(0, 0, 0, 0.3)
 }
