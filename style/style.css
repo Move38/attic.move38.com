@@ -170,8 +170,12 @@ a:active {
 	border: none;
 }
 
-.buy_button:active {
-	background: #40caff;
+button:active {
+	background: #e8e8e8;
+}
+
+button:focus {
+	background: #e8e8e8;
 }
 
 .shadow {
