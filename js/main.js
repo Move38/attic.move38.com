@@ -1,8 +1,3 @@
-if (screen.width >= 500) {
-   document.location = "../desktop.html";
-   /* Sends the user to a desktop formatted site ... */
-}
-
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const blinksterID = urlParams.get('ref');
@@ -10,6 +5,11 @@ var discount = urlParams.get('discount');
 
 if(discount === null) {
   discount = "VIP-8675309";
+}
+
+if (screen.width >= 500) {
+   document.location = "../desktop.html?discount=" + discount + '&ref=' + blinksterID;
+   /* Sends the user to a desktop formatted site ... */
 }
 
 function buyBlinksAction() {
