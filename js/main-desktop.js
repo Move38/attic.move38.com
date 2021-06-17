@@ -12,7 +12,7 @@ function buyBlinksAction() {
 };
 
 var _statcounter = _statcounter || []; 
-_statcounter.push({"tags": {"blinksterID": blinksterID, "discount": discount, "page": "FnF Deal"}}); 
+_statcounter.push({"tags": {"blinksterID": blinksterID, "discount": discount, "page": "FnF Deal - Desktop"}}); 
 
 window.onscroll = function() {scrollRotate()};
 
